@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Balloon</title>
+</head>
+<body>
+<h1>Balloon Orders</h1>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th scope="col">Balloon Type</th>
+        <th scope="col">Balloon Size</th>
+<!--        <th scope="col">Client Name</th>-->
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="order : ${orders}">
+        <td th:text="${order.balloonColor}"></td>
+        <td th:text="${order.balloonSize}"></td>
+<!--        <td th:text="${user}"></td>-->
+    </tr>
+    </tbody>
+</table>
+<a href="/balloons" class="btn btn-primary">Balloons</a>
+
+</body>
+</html>
