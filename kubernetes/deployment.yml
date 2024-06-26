@@ -6,7 +6,7 @@ metadata:
 data:
   POSTGRES_URL: "postgresql://postgres:postgres@database:5432/postgres"
   POSTGRES_DATABASE: "postgres"
-  POSTGRES_USER: "test"
+  POSTGRES_USER: "postgres"
 ---
 apiVersion: v1
 kind: Secret
